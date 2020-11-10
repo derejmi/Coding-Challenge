@@ -1,0 +1,105 @@
+/* html {
+  max-height: 100%;
+} */
+
+/*BODY */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-height: 100%;
+  width: 100%;
+}
+
+/* HEADER NAV */
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav ul li {
+  list-style: none;
+  padding-right: 20px;
+  font-size: 1.5em;
+}
+
+/* GOOGLE IMAGE*/
+
+.GoogleImage {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* COUNTRY SECTION */
+
+section p {
+  padding-left: 39px;
+  background: #f2f2f2;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 13.3%;
+
+  /* margin-top: 50%; */
+}
+
+/*FOOTER*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: #f2f2f2;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  list-style: none;
+  padding-right: 20px;
+  font-size: 1.5em;
+
+  /* .search-buttons{
+    display:block;
+    width:100vw; */
+}
+
+.experiment {
+  display: block;
+  margin: 0 auto;
+}
+#header-search-submit {
+  background: orange;
+}
+input[type="text"] {
+  width: 75%;
+}
+/* #header-search-submit {
+  position: absolute;
+  padding: 0;
+  right: 15px;
+  top: 6px;
+  font-size: 24px;
+  font-family: FontAwesome;
+  cursor: pointer;
+  border: 0;
+  width: 250px;
+} */
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+@media (min-width: 600px) {
+}
+
+@media (max-width: 599px) {
+}

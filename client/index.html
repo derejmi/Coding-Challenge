@@ -6,50 +6,73 @@
     <title>Google</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="../js/client.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav class="header-nav">
-        <ul class="left-nav-list">
-          <li>About</li>
-          <li>Store</li>
-        </ul>
-        <ul class="right-nav-list">
-          <li>Gmail</li>
-          <li>Images</li>
-          <li><img src="" alt="Google apps button" /></li>
-          <li><img src="" alt="Google account login" /></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="page-div">
+      <header>
+        <nav class="header-nav">
+          <ul class="left-nav-list">
+            <li><a href="about.google.com">About</a></li>
+            <li><a href="https://store.google.com/">Store</a></li>
+          </ul>
+          <ul class="right-nav-list">
+            <li><a href="mail.google.com">Gmail</a></li>
+            <li><a href="google.com/images">Images</a></li>
+            <li>
+              <a href="menu.google.com" class="dot-menu"
+                ><i class="fas fa-ellipsis-v"></i
+                ><i class="fas fa-ellipsis-v"></i
+                ><i class="fas fa-ellipsis-v"></i
+              ></a>
+            </li>
+            <li>
+              <button class="sign-in">
+                <a href="user.google.com" class="account-signin">Sign in</a>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <form class="google-form">
-      <img
-        src="https://wi-images.condecdn.net/image/0dZR3B4XQz2/crop/1620/f/google-logo_2.jpg"
-        alt="google image"
-        class="GoogleImage"
-      />
-      <input type="text" id="header-search-submit" />
-    </form>
-    <div class="search-buttons">
-      <button id="searchLeft">Google Search</button>
-      <button id="searchRight">Im feeling lucky</button>
+      <section class="main-section">
+        <img
+          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+          alt="Google Logo"
+          width="285"
+          height="92"
+        />
+        <div class="search-area">
+          <span>
+            <i class="fas fa-search"></i>
+          </span>
+          <input type="text" />
+          <span>
+            <i class="fas fa-microphone"></i>
+          </span>
+        </div>
+        <div class="buttons">
+          <button>Google Search</button>
+          <button id="searchRight">I'm Feeling Lucky</button>
+        </div>
+      </section>
+      <section class="bottom-section">
+        <div>
+          <p>United Kingdom</p>
+        </div>
+        <footer>
+          <ul class="left-footer">
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <ul class="right-nav-list">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </footer>
+      </section>
     </div>
-
-    <section>
-      <p>United Kingdom</p>
-    </section>
-    <footer>
-      <ul class="left-footer">
-        <li>Advertising</li>
-        <li>Business</li>
-        <li>How Search works</li>
-      </ul>
-      <ul class="right-nav-list">
-        <li>Privacy</li>
-        <li>Term</li>
-        <li>Settings</li>
-      </ul>
-    </footer>
   </body>
 </html>

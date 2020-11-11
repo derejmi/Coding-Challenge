@@ -33,41 +33,56 @@ function luckyLink(data) {
   window.open(link);
 }
 /*GOOGLE SEARCH LOGIC */
+
+const GoogleCheck = document.getElementById("searchLeft");
+GoogleCheck.addEventListener("click", GoogleSearch);
+
 function GoogleSearch() {
   fetch("http://localhost:2000/search")
     .then((r) => r.json())
     .then((data) => WebsiteList(data));
 }
+
 function WebsiteList(websites) {
-  for (let i = 0; i <= websites.length; i++) {
-    function NewDiv() {
-      let id = websites[i].id;
-      const btn = document.createElement(
-        "div class='WebsiteLinks' id=" + websites[i].id
-      );
-      document.main.appendChild(btn);
+  function NewDiv() {
+    for (let i = 0; i <= websites.length; i++) {
+      let Arrayid = websites[i].id;
+      console.log(Arrayid);
+      const btn = document.createElement("div");
+      document.getElementById("mainId").appendChild(btn);
+      document
+        .getElementsByTagName("div")
+        .setAttribute("id", Arrayid)
+        .setAttribute("class", "WebsiteStyles");
       NewPTag();
       NewH3Tag();
       NewP2Tag();
     }
-    function NewPTag() {
+  }
+  function NewPTag() {
+    for (let i = 0; i <= websites.length; i++) {
       const btn2 = document.createElement("p");
       btn2.innerHTML = websites[i].url;
       const div = document.querySelector("#" + websites[i].id); //grab div with specific id using queryselector
       document.div.appendChild(btn2);
     }
-    function NewH3Tag() {
+  }
+  function NewH3Tag() {
+    for (let i = 0; i <= websites.length; i++) {
       const btn3 = document.createElement("h3");
       btn3.innerHTML =
         "<a href=" + websites[i].url + ">" + websites[i].websiteName + "</a>";
       const div = document.querySelector("#" + websites[i].id);
       document.div.appendChild(btn3);
     }
-    function NewP2Tag() {
+  }
+  function NewP2Tag() {
+    for (let i = 0; i <= websites.length; i++) {
       const btn4 = document.createElement("p");
       btn4.innerHTML = websites[i].description;
       const div = document.querySelector("#" + websites[i].id);
       document.div.appendChild(btn4);
     }
   }
+  NewDiv();
 }

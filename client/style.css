@@ -18,7 +18,7 @@ body {
   width: 100%;
 }
 
-a {
+header a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -40,6 +40,14 @@ a {
   padding-right: 20px;
 }
 
+#sign-in {
+  color: white;
+  background-color: #4285f4;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 3%;
+}
+
 /*MAIN SECTION */
 
 .main-section {
@@ -48,24 +56,37 @@ a {
   left: 40%;
 }
 
+.main-section > * {
+  flex: 0 1 auto;
+}
 .search-area {
   margin-top: 20px;
   margin-left: 40px;
 }
 
+#search-input {
+  width: 200px;
+}
+/* #search-bar {
+  width: 350px;
+} */
+
 .buttons {
-  margin-left: 20px;
+  margin-left: 40px;
+  margin-top: 15px;
 }
 
 /* COUNTRY SECTION */
 
 section p {
-  padding-left: 39px;
+  padding-left: 60px;
   background: #f2f2f2;
   margin-bottom: 0px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-top: 20px;
   margin-left: 0px;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 15px;
 
   /* margin-top: 50%; */
 }
@@ -90,10 +111,15 @@ footer ul li {
   padding-right: 20px;
 }
 
+footer ul li a {
+  color: #5f6368;
+  text-decoration: none;
+}
 button:hover {
   background-color: white;
   color: black;
   border: 2px solid black;
+  cursor: pointer;
 }
 
 @media (min-width: 600px) {

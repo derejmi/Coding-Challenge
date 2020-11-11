@@ -1,6 +1,6 @@
-README
+#README
 
-# Install all the dependencies in the package (i think npm install may work)
+Install all the dependencies in the package (i think npm install may work)
 
 #Run the server(app.js) using the script or if that doesnt work npx nodemon app.js should work
 

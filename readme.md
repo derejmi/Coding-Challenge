@@ -1,5 +1,6 @@
 # Google Clone
 Google Clone - Done as part of a 1-day coding challenge.
+-[](GoogleCloneUX.gif)
 
 ## Installation
 

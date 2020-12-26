@@ -1,7 +1,12 @@
-# Readme
+# Google Clone
+Google Clone - Done as part of a 1-day coding challenge.
 
-Install all the dependencies in the package (i think npm install may work)
+## Installation
 
-Run the server(app.js) using the script or if that doesnt work npx nodemon app.js should work
+- Clone or download the repo
+- Open your terminal/CLI and navigate to the repository folder
+- Run `npm install` to install dependencies
 
-From there you should be able to use the features on the homepage - index.html
+## Usage
+
+- Open `index.html` in yout browser
